@@ -288,90 +288,13 @@
         
     </footer>
 
-
-
-        <script src="plugins/auto-hiding-navigation/js/jquery-3.0.0.min.js"></script>
-        <script src="plugins/auto-hiding-navigation/js/main.js"></script>
-        <script src="js/nav-collapse.js"></script>
-        <script src="plugins/contact-form-master/js/main.js"></script>
-        <script src="plugins/contact-form-master/js/modernizr.js"></script>
-        
-        <!--// Smooth Scroll-->
-        <script>
-        // Select all links with hashes
-        $('a[href*="#"]')
-          // Remove links that don't actually link to anything
-          .not('[href="#"]')
-          .not('[href="#0"]')
-          .click(function(event) {
-            // On-page links
-            if (
-              location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-              && 
-              location.hostname == this.hostname
-            ) {
-              // Figure out element to scroll to
-              var target = $(this.hash);
-              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-              // Does a scroll target exist?
-              if (target.length) {
-                // Only prevent default if animation is actually gonna happen
-                event.preventDefault();
-                $('html, body').animate({
-                  scrollTop: target.offset().top
-                }, 800, function() {
-                  // Callback after animation
-                  // Must change focus!
-                  var $target = $(target);
-                  $target.focus();
-                  if ($target.is(":focus")) { // Checking if the target was focused
-                    return false;
-                  } else {
-                    $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-                    $target.focus(); // Set focus again
-                  };
-                });
-              }
-            }
-          });
-    </script>
-       
-    <script>
-        /*
-        Load more content with jQuery - May 21, 2013
-        (c) 2013 @ElmahdiMahmoud
-        */   
-
-        $(function () {
-            $("div.work-row").slice(0, 2).show();
-            $("#loadMore").on('click', function (e) {
-                e.preventDefault();
-                $("div:hidden").slice(0, 2).slideDown();
-                if ($("div:hidden").length == 0) {
-                    $("#load").fadeOut('slow');
-                }
-                $('html,body').animate({
-                    scrollTop: $(this).offset().top
-                }, 1500);
-            });
-        });
-
-        $('a[href=#top]').click(function () {
-            $('body,html').animate({
-                scrollTop: 0
-            }, 600);
-            return false;
-        });
-
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 50) {
-                $('.totop a').fadeIn();
-            } else {
-                $('.totop a').fadeOut();
-            }
-        });
-      </script>   
-        
+    <script src="plugins/auto-hiding-navigation/js/jquery-3.0.0.min.js"></script>
+    <script src="plugins/auto-hiding-navigation/js/main.js"></script>
+    <script src="js/nav-collapse.js"></script>
+    <script src="plugins/contact-form-master/js/main.js"></script>
+    <script src="plugins/contact-form-master/js/modernizr.js"></script>
+    <script src="plugins/smooth-scroll-effect/js/main.js"></script>
+    <script src="plugins/load-more-effect/js/main.js"></script>
 
   </body>
 </html>
