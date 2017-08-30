@@ -1,0 +1,114 @@
+/*FOOTER.SASS*/
+
+footer
+    margin-left: 0
+    padding-bottom: 0
+    +clearfix
+    
+.grid-container
+    +grid-container
+    
+        
+    #contact
+        background-color: #fff
+        margin-left: 0
+        margin-bottom: 0
+        padding-bottom: 215px
+
+        
+        .wrapper
+            
+            +grid-media($md)
+                max-width: 50rem
+                margin-right: 3rem
+
+    #contact   
+        +grid-column(12)
+        margin-bottom: 0
+        text-align: left
+        margin-left: 0
+
+        +grid-media($lg)
+            +grid-column(7)
+
+        .c-form
+
+
+    #footer
+        +grid-media($lg)
+            padding-bottom: 0
+        
+        .wrapper
+            
+            +grid-media($lg)
+                max-width: 33.33333rem
+                margin-left: -6rem
+                position: relative
+            
+            
+    #footer   
+        width: 100%
+        float: left
+        margin-bottom: 0
+        text-align: left
+        margin-left: 0
+        +clearfix
+
+        +grid-media($lg)
+            +grid-column(5)
+
+            
+    #footer
+
+        .footer-content
+            text-align: center
+
+            .logo
+                margin-bottom: 120px
+
+                a
+
+                    img
+                        display: inline-block
+                        max-width: 181px
+                        height: auto
+                        border-bottom: none
+
+            .social-links
+                display: flex
+                align-items: center
+                justify-content: center
+                margin-bottom: 167px
+
+                a
+                    width: 27px
+                    margin-left: 1rem
+
+
+            ul#footer-navigation 
+                +clearfix
+                display: inline-block
+
+                li
+                    display: inline-block
+                    float: left
+                    margin-right: 1em
+
+                    &:last-of-type
+                        margin-right: 0
+                    a
+
+
+        .copy
+            position: absolute
+            bottom: 10px
+            right: 135%
+            width: 100%
+            color: lighten($brand-dark, 10%)
+            font-size: 14px
+
+            a
+                color: lighten($brand-dark, 10%)
+    
+    
+    
