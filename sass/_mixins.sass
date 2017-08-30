@@ -1,0 +1,55 @@
+// GLOBAL MIXINS
+
+// media queries
+=retina
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
+    @content
+
+
+=background($imgpath, $grad1, $grad2, $attachment, $position: 0 0, $repeat: no-repeat)
+  background:
+    image: url(#{$imgpath})
+    position: $position 
+    repeat: $repeat 
+    attachment: $attachment 
+    linear-gradient: ("$grad1, $grad2,")
+
+    
+=sm-caps
+  font-size: 13px
+  font-weight: 700
+
+=lg-display
+  font-size: 64px
+  line-height: 80px
+
+
+=slide-thr-up-btn
+  transition: .18s
+  transition-property: border-color,background-color,color,opacity
+  position: relative
+  background: transparent
+
+  &:hover:before
+    -webkit-transform: scaleY(1)
+    transform: scaleY(1)
+    -webkit-transform-origin: center bottom
+    transform-origin: center bottom
+
+  &:before
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    content: ""
+    display: block
+    background: $brand-primary
+    -webkit-transform: scaleY(0)
+    transform: scaleY(0)
+    -webkit-transform-origin: center top
+    transform-origin: center top
+    transition: -webkit-transform .2s ease-in
+    transition: transform .2s ease-in
+    transition: transform .2s ease-in,-webkit-transform .2s ease-in
+    z-index: 0
