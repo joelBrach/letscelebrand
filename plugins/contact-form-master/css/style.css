@@ -1,0 +1,87 @@
+
+
+/* -------------------------------- 
+
+Form
+
+-------------------------------- */
+
+
+
+
+.cd-form div {
+  /* form element wrapper */
+  position: relative;
+}
+
+
+/* -------------------------------- 
+
+FLoating labels 
+
+-------------------------------- */
+
+.js .floating-labels .cd-label {
+  position: absolute;
+  top: 6px;
+  left: 0px;
+  cursor: text;
+  -webkit-transition: top 0.2s, left 0.2s, font-size 0.2s;
+  -moz-transition: top 0.2s, left 0.2s, font-size 0.2s;
+  transition: top 0.2s, left 0.2s, font-size 0.2s;
+}
+.js .floating-labels .icon .cd-label {
+  left: 56px;
+}
+.js .floating-labels .cd-label.float {
+  /* move label out the input field */
+  
+  top: -16px;
+  left: 0 !important;
+}
+@media only screen and (min-width: 600px) {
+  .js .floating-labels legend + div {
+    /* reduce margin-top for first form element after the legend */
+    margin-top: 16px;
+  }
+  .js .floating-labels .cd-label {
+    top: 6px;
+  }
+}
+
+.cd-form input.error {
+  color:  #E94B35;
+}
+.cd-form input.valid, textarea.valid {
+  color:  #88efc5;
+  background: url("../img/cd-valid.svg") no-repeat top right;
+}
+
+.sendMailModal{
+  display:none;
+  position: fixed;
+   top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+  background: rgba(255,255,255,.4);
+}
+.modalContent {
+  position: relative;
+  width: 450px;
+  margin: 30% auto 0;
+  border: solid #ddd 1px;
+  padding: 20px;
+}
+.modalClose {
+  width:40px;
+  height: 40px;
+  border: solid #ddd 1px;
+  color: #ccc;
+}
+
+.submitError {
+  background-color: rgb(223, 18, 18) !important;
+}
+
