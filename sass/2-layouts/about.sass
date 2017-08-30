@@ -1,0 +1,63 @@
+/*ABOUT.SASS*/
+
+#about
+    padding-top: 0
+    
+    .big-picture
+        +background('../img/office-il.jpg', #ccc, #ddd, scroll, 50% 40%)
+        background-size: cover
+        height: 670px
+
+        max-height: 670px
+        overflow: hidden
+        margin-bottom: 136px
+        
+        
+        
+    .wrapper
+        
+        .text-container
+            
+
+            +grid-media($lg)
+                +grid-column(7)
+
+#about
+    
+    .wrapper
+
+        .profile-il
+            padding-top: 16rem
+
+
+            +grid-media($lg)
+                +grid-column(5)
+            
+            img
+                max-width: 65%
+                float: right
+                        
+            
+            
+            
+#about
+    
+    .wrapper
+
+        h3
+            +lg-display
+            margin-bottom: 60px
+
+        article
+
+            +grid-media($sm)
+                /*margin-left: 15rem*/
+                max-width: 51rem
+
+            h4
+                +sm-caps
+
+        blockquote
+            font-size: 24px
+            line-height: 48px
+            font-weight: 300

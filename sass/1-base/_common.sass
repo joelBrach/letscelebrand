@@ -1,0 +1,81 @@
+/*COMMON.SASS*/
+
+body
+    font-family: $sans-serif
+    background-color: $brand-light
+    font-size: 18px
+    
+h1,h2,h3,h4,h5,h6
+    font-family: $sans-serif
+h1
+    font-size: 64px
+    line-height: 80px
+    font-weight: 900
+    
+h2
+    font-size: 3em
+ 
+
+    
+p
+    font-weight: 300
+    line-height: 32px
+    
+.wrapper
+    +grid-container
+    margin-right: auto
+    margin-left: auto
+    max-width: 80.666666rem
+    padding: 0 15px
+    
+header
+    +clearfix
+    padding: 40px 15px
+    
+.brand
+    +hide-text
+    background: center no-repeat
+    height: 125px
+    width: 125px
+    margin: 15px 0
+    float: left
+    background-image: url("../img/brightside-studios-logo.png")
+    
+    
+    +retina
+        background-image: url("../img/brightside-studios-logo_2x.png")
+        background-size: 125px 125px
+
+a
+    color: $brand-dark
+    &:hover
+        color: $brand-primary
+    text-decoration: none
+
+    
+a:focus
+    outline: none
+  
+
+section:focus 
+    outline: none
+
+section
+    padding-top: 136px
+    padding-bottom: 136px
+    +clearfix
+    
+    #{$all-buttons}
+        font-family: $sans-serif
+        background: $brand-light
+        color: $brand-dark
+        border: solid 1px $brand-primary
+        border-radius: 0
+        padding: 1em 2.5em
+        
+        &:hover
+            background: $brand-primary
+
+        &:focus
+            outline: none
+
