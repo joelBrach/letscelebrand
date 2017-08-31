@@ -1,7 +1,7 @@
 var hero_images = [{
     "key": 197,
     "images": [
-    "https://pro2-bar-s3-cdn-cf6.myportfolio.com/d110318fa440a2415bde0089b3da7f5f/aacc0c38232893.5759b51b43505_rwc_377x82x2734x2140x2734.jpg?h=b2d3f8930400f32e10e323acfcd9b3cd", 
+    "https:\/\/landor-prod.imgix.net\/app\/uploads\/2015\/08\/27135714\/Citroen-1.jpg?w=1200&sat=-100&blend=FED100&bm=multiply&auto=format", 
     "https:\/\/landor-prod.imgix.net\/app\/uploads\/2015\/08\/27135714\/Citroen-1.jpg?w=1200&auto=format", 
     "https:\/\/landor-prod.imgix.net\/app\/uploads\/2015\/08\/27135714\/Citroen-2.jpg?w=1200&auto=format"]
 }, {
@@ -75,7 +75,7 @@ var hero_images = [{
   var random = Math.ceil(Math.random() * 11);
   var heroImages = $('.home-hero__image');
 
-  heroImages[0].style.backgroundImage = "url(" + hero_images[0].images[0] + ")";
+  heroImages[0].style.backgroundImage = "url(" + hero_images[random].images[0] + ")";
   heroImages[1].style.backgroundImage = "url(" + hero_images[random].images[1] + ")";
   heroImages[2].style.backgroundImage = "url(" + hero_images[random].images[2] + ")";
 
