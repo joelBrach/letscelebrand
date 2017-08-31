@@ -138,10 +138,6 @@
     height: 200vh
 }
 
-.home-hero--running.home-hero--2 {
-    height: 300vh
-}
-
 .home-hero--running.home-hero--3 {
     height: 400vh
 }
@@ -154,14 +150,6 @@
     height: 600vh
 }
 
-.home-hero--running .home-hero__arrow,.home-hero--running .home-hero__content {
-    position: fixed
-}
-
-.home-hero--running .home-hero__image {
-    position: fixed;
-    height: 100vh
-}
 
 .home-hero--running.home-hero--stop .home-hero__arrow,.home-hero--running.home-hero--stop .home-hero__content {
     position: absolute
@@ -174,4 +162,30 @@
 /*DO NOT DELETE*/
 main {
     padding: 0;
+}
+/* Touch event fix*/
+
+
+.home-hero--running .home-hero__image {
+    position: absolute; 
+    height: 450px;
+}
+
+
+.home-hero--running.home-hero--2 {
+        height: 450px;   
+}
+
+@media (min-width: 826px) {
+    .home-hero--running .home-hero__image {
+       position: fixed;
+        height: 100vh;
+}
+
+    .home-hero--running.home-hero--2 {
+        height: 300vh;
+    }
+    .home-hero--running .home-hero__arrow,.home-hero--running .home-hero__content {
+    position: fixed
+}
 }

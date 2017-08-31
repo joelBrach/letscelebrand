@@ -68,8 +68,7 @@ var hero_images = [{
     "key": 13549,
     "images": [
     "https:\/\/landor-prod.imgix.net\/app\/uploads\/2015\/08\/20104100\/Melbourne-1-edit.jpg?w=1200&sat=-100&blend=FED100&bm=multiply&auto=format", 
-    "https:\/\/landor-prod.imgix.net\/app\/uploads\/2015\/08\/20104100\/Melbourne-1-edit.jpg?w=1200&auto=format", 
-    "https:\/\/landor-prod.imgix.net\/app\/uploads\/2015\/08\/20104105\/Landor_Folio_Australian-Open_288.jpg?w=1200&auto=format"]
+    "https:\/\/landor-prod.imgix.net\/app\/uploads\/2015\/08\/20104100\/Melbourne-1-edit.jpg?w=1200&auto=format", "https:\/\/landor-prod.imgix.net\/app\/uploads\/2015\/08\/20104105\/Landor_Folio_Australian-Open_288.jpg?w=1200&auto=format"]
 }];
 (function imageRandomator() {
   var random = Math.ceil(Math.random() * 11);

@@ -4,7 +4,9 @@
                 e.preventDefault();
                 $(".work-row:hidden").slice(0, 1).slideDown();
                 if ($(".work-row:hidden").length == 0) {
-                    $("#loadMore").fadeOut(1700);
+                    $("#loadMore").fadeTo(1700, 0, function() {
+                        $("#loadMore").css("visibility", "hidden");
+                    });
                 }
                 $('html,body').animate({
                     scrollTop: $(this).offset().top
