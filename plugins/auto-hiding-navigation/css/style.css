@@ -214,3 +214,8 @@
     display: table-cell;
   }
 }
+
+/* white bg on scroll top (mobile) */
+header.cd-auto-hide-header.white-bg {
+  background-color: #fff;
+}

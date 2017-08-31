@@ -47,6 +47,8 @@ jQuery(document).ready(function($){
 	    if (previousTop - currentTop > scrollDelta) {
 	    	//if scrolling up...
 	    	mainHeader.removeClass('is-hidden');
+	    	// displaying header with white bg on scroll top && on Mobile display
+	    	(window.innerWidth < 992 && currentTop > 1000) ? mainHeader.addClass('white-bg') : mainHeader.removeClass('white-bg');
 	    } else if( currentTop - previousTop > scrollDelta && currentTop > scrollOffset) {
 	    	//if scrolling down...
 	    	mainHeader.addClass('is-hidden');
