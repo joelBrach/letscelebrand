@@ -6,9 +6,7 @@
                 if ($(".work-row:hidden").length == 0) {
                     $("#loadMore").fadeOut(1700);
                 }
-                $('html,body').animate({
-                    scrollTop: $(this).offset().top
-                }, 1500);
+                
             });
         });
 
