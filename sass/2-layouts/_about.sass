@@ -26,17 +26,30 @@
     
     .wrapper
 
-        .profile-il
+        figure.profile-il
             padding-top: 16rem
+            +grid-column(12)
 
 
             +grid-media($lg)
                 +grid-column(5)
             
-            img
-                max-width: 65%
-                float: right
-                        
+            
+#about
+    
+    .wrapper
+
+        figure.profile-il
+            padding-top: 16rem  
+            
+            .profile-wrap
+                +grid-media($lg)
+                    width: 400px
+                    float: right
+
+                img
+                    padding-bottom: 20px
+
             
             
             
