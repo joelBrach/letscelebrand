@@ -11,6 +11,7 @@
         
 header.cd-auto-hide-header
     background-color: transparent
+    z-index: 1
     
     
     +grid-media($lg)
@@ -19,6 +20,23 @@ header.cd-auto-hide-header
     
     a.nav-trigger
         border-left: none
+        z-index: 1
+        
+        span
+            
+            em
+                height: 3px
+                width: 32px
+                border-radius: 30px
+            
+                &:before
+                    @extend em
+                    transform: translateY(-10px)
+
+                &:after
+                    @extend em
+                    transform: translateY(10px)
+                    width: 15px
 
 .logo.hor
     display: none
@@ -29,9 +47,16 @@ header.cd-auto-hide-header
     
 .logo.ver
     display: block
+    left: 15px
+    z-index: 1
     
     +grid-media($lg)
         display: none
+    
+    svg
+        height: 80px
+        width: 80px
+        z-index: 1
 
 
 .logo img
@@ -51,4 +76,78 @@ header.cd-auto-hide-header
 .cd-primary-nav > ul a
     font-weight: 700
  
-  
+
+   
+.cd-primary-nav
+    
+    .social-links.top
+        display: none
+        
+.cd-auto-hide-header.nav-open
+    
+    .cd-primary-nav
+        width: 100%
+        
+        a.nav-trigger
+            
+            span
+                
+                em
+                
+                    &:before
+                        background-color: $brand-light
+
+                    &:after
+                        background-color: $brand-light
+                        width: 100%
+        
+        ul
+            padding-top: 200px
+            z-index: 0
+            
+            &:before
+                content: ''
+                display: block
+                position: absolute
+                height: 100vh
+                background-color: $brand-dark
+                z-index: -1
+                top: -60px
+                right: 0
+                left: 0
+            
+            a
+                color: $brand-primary
+                font-size: 40px
+                margin-bottom: 20px
+                border: none   
+                
+                
+                
+        .social-links.top
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-bottom: 167px
+            z-index: 1
+            position: relative
+            top: 590px
+
+            a
+                margin-left: 1rem 
+                color: $brand-light
+                color: #a5a5a5
+                fill: #a5a5a5
+                
+                svg
+                    width: 27px
+                
+            p
+                color: $brand-light
+                
+                
+                
+    .logo.ver
+        
+        a
+            color: $brand-light
